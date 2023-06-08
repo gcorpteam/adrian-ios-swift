@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileHeaderView" customModule="EmployeePortal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="206"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMS-rt-w1P">
+                    <rect key="frame" x="0.0" y="0.0" width="133.5" height="206"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dwu-BC-pd0">
+                            <rect key="frame" x="16.5" y="53" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="rGm-ap-41q"/>
+                                <constraint firstAttribute="width" constant="100" id="tga-rZ-jcT"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Dwu-BC-pd0" firstAttribute="centerY" secondItem="DMS-rt-w1P" secondAttribute="centerY" id="45v-bg-Ose"/>
+                        <constraint firstItem="Dwu-BC-pd0" firstAttribute="centerX" secondItem="DMS-rt-w1P" secondAttribute="centerX" id="mwS-jy-mfs"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HI-bL-AGB">
+                    <rect key="frame" x="133.5" y="0.0" width="247.5" height="206"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dvv-Ru-mok">
+                            <rect key="frame" x="0.0" y="35.5" width="237.5" height="135"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZ6-os-qIQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="237.5" height="35"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1Z-cE-Bgc">
+                                    <rect key="frame" x="0.0" y="50" width="237.5" height="35"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLs-Nr-YYZ">
+                                    <rect key="frame" x="0.0" y="100" width="237.5" height="35"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <state key="normal" title="Edit profile"/>
+                                    <connections>
+                                        <action selector="editProfileButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ueh-9H-Zff"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dvv-Ru-mok" secondAttribute="trailing" constant="10" id="6ui-F4-d7P"/>
+                        <constraint firstItem="dvv-Ru-mok" firstAttribute="leading" secondItem="0HI-bL-AGB" secondAttribute="leading" id="R8e-ES-yqC"/>
+                        <constraint firstItem="dvv-Ru-mok" firstAttribute="centerY" secondItem="0HI-bL-AGB" secondAttribute="centerY" id="a7S-gX-Vkn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0HI-bL-AGB" secondAttribute="bottom" id="9Cp-vw-XtZ"/>
+                <constraint firstItem="DMS-rt-w1P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CwH-2l-zDe"/>
+                <constraint firstItem="DMS-rt-w1P" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Gmv-LN-3GB"/>
+                <constraint firstItem="DMS-rt-w1P" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.35" id="QdQ-hG-iyt"/>
+                <constraint firstItem="DMS-rt-w1P" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="VFc-gm-SQ6"/>
+                <constraint firstItem="0HI-bL-AGB" firstAttribute="leading" secondItem="DMS-rt-w1P" secondAttribute="trailing" id="rLv-Xr-lG7"/>
+                <constraint firstItem="0HI-bL-AGB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="uPN-y4-hVU"/>
+                <constraint firstItem="0HI-bL-AGB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="woY-BQ-rOH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="designationLabel" destination="U1Z-cE-Bgc" id="1K7-Jx-lD2"/>
+                <outlet property="nameLabel" destination="vZ6-os-qIQ" id="swW-Qw-JAk"/>
+                <outlet property="profileImageView" destination="Dwu-BC-pd0" id="YhO-wo-kdm"/>
+            </connections>
+            <point key="canvasLocation" x="65.94202898550725" y="443.30357142857139"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1110"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5E0DDA03239E14DD00C75639"
+               BuildableName = "Workforce Guardian.app"
+               BlueprintName = "EmployeePortal"
+               ReferencedContainer = "container:EmployeePortal.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Sajeev-EmployeePortal"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5E0DDA19239E14DF00C75639"
+               BuildableName = "EmployeePortalTests.xctest"
+               BlueprintName = "EmployeePortalTests"
+               ReferencedContainer = "container:EmployeePortal.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5E0DDA24239E14DF00C75639"
+               BuildableName = "EmployeePortalUITests.xctest"
+               BlueprintName = "EmployeePortalUITests"
+               ReferencedContainer = "container:EmployeePortal.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Sajeev-EmployeePortal"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5E0DDA03239E14DD00C75639"
+            BuildableName = "Workforce Guardian.app"
+            BlueprintName = "EmployeePortal"
+            ReferencedContainer = "container:EmployeePortal.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Sajeev-EmployeePortal"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5E0DDA03239E14DD00C75639"
+            BuildableName = "Workforce Guardian.app"
+            BlueprintName = "EmployeePortal"
+            ReferencedContainer = "container:EmployeePortal.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Sajeev-EmployeePortal">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Sajeev-EmployeePortal"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

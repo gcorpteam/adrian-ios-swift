@@ -1,0 +1,18 @@
+//
+//  EmployeePortal.xcconfig
+//  EmployeePortal
+//
+//  Created by sajeev Raj on 1/7/20.
+//  Copyright © 2020 EmployeePortal. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BUNDLE_ID = com.EmployeePortal.com
+
+BASE_URL = wfgservices.staging.elcomcms.com/api/
+AUTHENTICATION_URL = workforceguardian.staging.elcomcms.com/api/v1/
+
+WEBSITE_URL = www.workforceguardian.com.au
+FORGOT_PASSWORD_URL = workforceguardian.staging.elcomcms.com/CMForgottenPassword.aspx

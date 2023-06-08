@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProfileHeaderViewCell" rowHeight="142" id="KGk-i7-Jjw" customClass="ProfileHeaderViewCell" customModule="EmployeePortal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKQ-zq-0pQ">
+                        <rect key="frame" x="0.0" y="0.0" width="112" height="135"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileHeaderPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="pbI-Dc-wBG">
+                                <rect key="frame" x="6" y="17.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="D0v-OB-Mxt"/>
+                                    <constraint firstAttribute="width" constant="100" id="Eq5-yU-BdT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ai-Re-bQm">
+                                <rect key="frame" x="0.0" y="0.0" width="112" height="135"/>
+                                <connections>
+                                    <action selector="profileButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6T3-3x-jYu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pbI-Dc-wBG" firstAttribute="centerX" secondItem="xKQ-zq-0pQ" secondAttribute="centerX" id="B9s-2e-ifV"/>
+                            <constraint firstAttribute="height" constant="135" id="VW8-Vt-t8Y"/>
+                            <constraint firstItem="pbI-Dc-wBG" firstAttribute="centerY" secondItem="xKQ-zq-0pQ" secondAttribute="centerY" id="d27-sX-E9Q"/>
+                            <constraint firstItem="2ai-Re-bQm" firstAttribute="leading" secondItem="jOz-FE-Pdk" secondAttribute="leading" id="joL-QS-eyw"/>
+                            <constraint firstItem="2ai-Re-bQm" firstAttribute="top" secondItem="jOz-FE-Pdk" secondAttribute="top" id="nUp-gm-aq4"/>
+                            <constraint firstItem="jOz-FE-Pdk" firstAttribute="bottom" secondItem="2ai-Re-bQm" secondAttribute="bottom" id="neu-H3-v8j"/>
+                            <constraint firstItem="jOz-FE-Pdk" firstAttribute="trailing" secondItem="2ai-Re-bQm" secondAttribute="trailing" id="x6A-lb-Btk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jOz-FE-Pdk"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZU7-a8-SVW">
+                        <rect key="frame" x="112" y="0.0" width="208" height="135"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SbR-xc-46J">
+                                <rect key="frame" x="0.0" y="36" width="198" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtE-by-Il0">
+                                        <rect key="frame" x="0.0" y="0.0" width="198" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs5-hf-Puu">
+                                        <rect key="frame" x="0.0" y="34" width="198" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u7-ep-KA9">
+                                        <rect key="frame" x="0.0" y="63" width="198" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Edit profile"/>
+                                        <connections>
+                                            <action selector="editProfileButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kl8-xT-pAT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SbR-xc-46J" secondAttribute="trailing" constant="10" id="0bo-y5-qku"/>
+                            <constraint firstItem="SbR-xc-46J" firstAttribute="centerY" secondItem="ZU7-a8-SVW" secondAttribute="centerY" id="5B3-hU-nD7"/>
+                            <constraint firstItem="SbR-xc-46J" firstAttribute="leading" secondItem="ZU7-a8-SVW" secondAttribute="leading" id="CTq-ie-xbA"/>
+                            <constraint firstAttribute="height" constant="135" id="qS3-7C-81g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tSd-Iq-fEm"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZU7-a8-SVW" firstAttribute="leading" secondItem="xKQ-zq-0pQ" secondAttribute="trailing" id="64G-wN-Hy8"/>
+                    <constraint firstAttribute="bottom" secondItem="xKQ-zq-0pQ" secondAttribute="bottom" id="Lt1-sZ-kdY"/>
+                    <constraint firstAttribute="trailing" secondItem="ZU7-a8-SVW" secondAttribute="trailing" id="TZV-YA-RJs"/>
+                    <constraint firstItem="xKQ-zq-0pQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cdT-Pk-YiA"/>
+                    <constraint firstAttribute="bottom" secondItem="ZU7-a8-SVW" secondAttribute="bottom" id="fFb-I9-wPf"/>
+                    <constraint firstItem="xKQ-zq-0pQ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.35" id="o11-k8-fOT"/>
+                    <constraint firstItem="xKQ-zq-0pQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oZV-Xo-oSU"/>
+                    <constraint firstItem="ZU7-a8-SVW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="roZ-KS-35g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="designationLabel" destination="rs5-hf-Puu" id="lgd-t7-rp5"/>
+                <outlet property="nameLabel" destination="DtE-by-Il0" id="cwV-Bc-OD2"/>
+                <outlet property="profileImageView" destination="pbI-Dc-wBG" id="Rpt-k8-bIV"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profileHeaderPlaceholder" width="80" height="80"/>
+    </resources>
+</document>

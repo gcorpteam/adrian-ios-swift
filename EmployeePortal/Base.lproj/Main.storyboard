@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lfl-JR-bdF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="tbt-jh-MZe">
+            <objects>
+                <navigationController id="lfl-JR-bdF" customClass="SideMenuNavigationController" customModule="Workforce_Guardian" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6an-rT-2v5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hn0-Qh-1M2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tf7-a7-4st" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1496" y="137"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Workforce_Guardian" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y1e-kH-Onk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="137"/>
+        </scene>
+        <!--Calendar View Controller-->
+        <scene sceneID="IeH-RL-38f">
+            <objects>
+                <viewController storyboardIdentifier="CalendarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5dh-38-RW3" customClass="CalendarViewController" customModule="Workforce_Guardian" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="crG-cu-0GV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cfr-Jx-vkz" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="0Nr-x6-Q01">
+                                    <size key="itemSize" width="85" height="84"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="Fqc-57-5R7">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="84"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ut9-uI-MLE" customClass="View" customModule="Workforce_Guardian" customModuleProvider="target">
+                                <rect key="frame" x="264.5" y="545" width="130" height="90"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KNg-Wp-hxj">
+                                        <rect key="frame" x="10" y="10" width="110" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkO-pr-SMn">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
+                                                <state key="normal" title="Add Time Sheet">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addTimeSheetButtonActionWithSender:" destination="5dh-38-RW3" eventType="touchUpInside" id="ziY-t3-oQd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfd-2Q-dWv">
+                                                <rect key="frame" x="0.0" y="40" width="110" height="30"/>
+                                                <state key="normal" title="Add Leave">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addLeaveActionWithSender:" destination="5dh-38-RW3" eventType="touchUpInside" id="nRG-Q8-fkN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KNg-Wp-hxj" secondAttribute="trailing" constant="10" id="MTb-qZ-TCf"/>
+                                    <constraint firstAttribute="height" constant="90" id="Nfx-SI-6pe"/>
+                                    <constraint firstAttribute="bottom" secondItem="KNg-Wp-hxj" secondAttribute="bottom" constant="10" id="OKl-LO-zkx"/>
+                                    <constraint firstItem="KNg-Wp-hxj" firstAttribute="leading" secondItem="Ut9-uI-MLE" secondAttribute="leading" constant="10" id="sGn-b2-C6J"/>
+                                    <constraint firstItem="KNg-Wp-hxj" firstAttribute="top" secondItem="Ut9-uI-MLE" secondAttribute="top" constant="10" id="zQt-Um-pLc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdL-NE-Vza">
+                                <rect key="frame" x="330.5" y="640" width="64" height="64"/>
+                                <state key="normal" image="add"/>
+                                <connections>
+                                    <action selector="addButtonActionWithSender:" destination="5dh-38-RW3" eventType="touchUpInside" id="Caq-Vd-juK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Cfr-Jx-vkz" secondAttribute="trailing" id="2ET-ft-Yrc"/>
+                            <constraint firstItem="Ut9-uI-MLE" firstAttribute="trailing" secondItem="bdL-NE-Vza" secondAttribute="trailing" id="2WN-Fn-dMV"/>
+                            <constraint firstItem="bdL-NE-Vza" firstAttribute="centerY" secondItem="crG-cu-0GV" secondAttribute="centerY" multiplier="1.5" id="4hK-A5-gel"/>
+                            <constraint firstItem="Cfr-Jx-vkz" firstAttribute="top" secondItem="pc3-eE-hLv" secondAttribute="top" id="Q46-aQ-0Np"/>
+                            <constraint firstItem="pc3-eE-hLv" firstAttribute="bottom" secondItem="Cfr-Jx-vkz" secondAttribute="bottom" id="SSx-WA-CH0"/>
+                            <constraint firstItem="bdL-NE-Vza" firstAttribute="centerX" secondItem="crG-cu-0GV" secondAttribute="centerX" multiplier="1.75" id="W44-ha-f5r"/>
+                            <constraint firstItem="Ut9-uI-MLE" firstAttribute="bottom" secondItem="bdL-NE-Vza" secondAttribute="top" constant="-5" id="cM5-vk-Ehq"/>
+                            <constraint firstItem="Cfr-Jx-vkz" firstAttribute="leading" secondItem="crG-cu-0GV" secondAttribute="leading" id="ubc-wd-OFY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pc3-eE-hLv"/>
+                    </view>
+                    <connections>
+                        <outlet property="addOptionsView" destination="Ut9-uI-MLE" id="KPd-7M-eub"/>
+                        <outlet property="addOptionsViewHeightConstraint" destination="Nfx-SI-6pe" id="CLt-Xr-LYH"/>
+                        <outlet property="calendarView" destination="Cfr-Jx-vkz" id="nCW-05-caM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWX-el-4Rj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811.59420289855075" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="64" height="64"/>
+    </resources>
+</document>
